@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minicurso: Qualidade e Atualização de Materiais Didáticos Digitais</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        /* High contrast color palette for accessibility */
+                        primary: '#003366', 
+                        secondary: '#E65100',
+                        bglight: '#F8F9FA',
+                        textdark: '#111827'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Base styles for larger, accessible text */
+        body {
+            font-size: 1.125rem; /* 18px base size */
+            line-height: 1.7;
+            color: #111827;
+        }
+        .quiz-option:checked + label {
+            border-color: #003366;
+            background-color: #EBF5FF;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-bglight antialiased">
+
+    <header class="bg-primary text-white py-12 px-6 shadow-md border-b-8 border-secondary">
+        <div class="max-w-4xl mx-auto">
+            <span class="inline-block bg-white text-primary font-bold py-1 px-3 rounded text-sm uppercase tracking-wider mb-4 border-2 border-primary">
+                Minicurso EaD - 1ª VA
+            </span>
+            <h1 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4">
+                Qualidade e Atualização de Materiais Didáticos Digitais
+            </h1>
+            <div class="flex items-center mt-6">
+                <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-xl font-bold mr-4 border-2 border-white">
+                    A
+                </div>
+                <div>
+                    <p class="text-lg font-semibold">Autor(a): Nome do Aluno</p>
+                    <p class="text-blue-200 text-base">Disciplina: Docência Digital na Era da IA</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-16">
+        
+        <section id="informacoes-gerais" class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+            <h2 class="text-3xl font-extrabold text-primary mb-8 border-b-4 border-secondary inline-block pb-2">Informações Gerais</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                        Público-Alvo
+                    </h3>
+                    <p class="text-gray-700 bg-gray-50 p-4 rounded-lg border border-gray-100 h-full">
+                        Educadores, designers instrucionais, conteudistas e profissionais de EaD que desejam aprimorar a criação de recursos educacionais.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                        Conhecimentos Prévios
+                    </h3>
+                    <p class="text-gray-700 bg-gray-50 p-4 rounded-lg border border-gray-100 h-full">
+                        Noções básicas de informática, navegação na internet e familiaridade inicial com Ambientes Virtuais de Aprendizagem (AVAs).
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                    <svg class="w-6 h-6 mr-2 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2.5 2.5 0 00-2.5-2.5H14"></path></svg>
+                    Objetivos de Aprendizagem
+                </h3>
+                <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-primary">
+                    <p class="mb-3 font-semibold text-primary">Ao final deste minicurso, você será capaz de:</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-800">
+                        <li>Identificar informações incorretas e fontes pouco confiáveis.</li>
+                        <li>Reconhecer conteúdos desatualizados frente às inovações.</li>
+                        <li>Avaliar e corrigir problemas de clareza na didática.</li>
+                        <li>Detectar e remover barreiras de acessibilidade (cores, fontes, etc.).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="videoaula" class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+            <h2 class="text-3xl font-extrabold text-primary mb-6 border-b-4 border-secondary inline-block pb-2">Conteúdo em Vídeo</h2>
+            <p class="text-gray-700 mb-6">Assista à videoaula abaixo para compreender os quatro eixos de avaliação de materiais didáticos (Precisão, Clareza, Acessibilidade e Atualização).</p>
+            
+            <div class="aspect-video w-full bg-black rounded-lg overflow-hidden shadow-md ring-4 ring-gray-100">
+                <!-- YouTube Iframe Placeholder (Can be replaced with actual video link) -->
+                <iframe 
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0" 
+                    title="Videoaula Minicurso" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="mt-4 p-4 bg-gray-100 rounded-md">
+                <p class="text-sm text-gray-600"><strong>Dica de Acessibilidade:</strong> Ative as legendas (CC) no player do vídeo, se necessário.</p>
+            </div>
+        </section>
+
+        <section id="avaliacao" class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+            <h2 class="text-3xl font-extrabold text-primary mb-6 border-b-4 border-secondary inline-block pb-2">Avaliação Interativa</h2>
+            <p class="text-gray-700 mb-8">Teste seus conhecimentos com base no vídeo assistido. Selecione a resposta correta e receba o feedback imediato.</p>
+
+            <div class="space-y-10">
+                
+                <!-- Question 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 quiz-container">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">1. Qual dos seguintes aspectos <span class="underline decoration-secondary">NÃO</span> é um pilar da qualidade abordado no curso?</h3>
+                    <div class="space-y-3">
+                        <div class="relative">
+                            <input type="radio" name="q1" id="q1a" value="wrong1" class="quiz-option sr-only">
+                            <label for="q1a" class="block w-full p-4 border-2 border-gray-300 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors">A) Acessibilidade do conteúdo</label>
+                        </div>
+                        <div class="relative">
+                            <input type="radio" name="q1" id="q1b" value="correct" class="quiz-option sr-only">
+                            <label for="q1b" class="block w-full p-4 border-2 border-gray-300 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors">B) Complexidade visual desnecessária</label>
+                        </div>
+                        <div class="relative">
+                            <input type="radio" name="q1" id="q1c" value="wrong2" class="quiz-option sr-only">
+                            <label for="q1c" class="block w-full p-4 border-2 border-gray-300 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors">C) Precisão e confiabilidade das informações</label>
+                        </div>
+                    </div>
+                    <button onclick="checkAnswer('q1', 'B) Complexidade visual desnecessária', 'Correto! A complexidade desnecessária prejudica a clareza, sendo um defeito a ser evitado, e não um pilar de qualidade.', 'Incorreto. Tente novamente. Lembre-se dos 4 eixos principais apresentados.')" class="mt-6 bg-primary hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg transition-colors shadow-md focus:outline-none focus:ring-4 focus:ring-blue-300">
+                        Verificar Resposta
+                    </button>
+                    <div id="feedback-q1" class="mt-4 p-4 rounded-lg hidden font-medium"></div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 quiz-container">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">2. Por que a "Atualização e Revisão" contínua é crítica em materiais digitais?</h3>
+                    <div class="space-y-3">
+                        <div class="relative">
+                            <input type="radio" name="q2" id="q2a" value="correct" class="quiz-option sr-only">
+                            <label for="q2a" class="block w-full p-4 border-2 border-gray-300 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors">A) Para refletir descobertas recentes e evitar obsolescência conceitual.</label>
+                        </div>
+                        <div class="relative">
+                            <input type="radio" name="q2" id="q2b" value="wrong1" class="quiz-option sr-only">
+                            <label for="q2b" class="block w-full p-4 border-2 border-gray-300 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors">B) Apenas para alterar o design visual a cada semestre.</label>
+                        </div>
+                        <div class="relative">
+                            <input type="radio" name="q2" id="q2c" value="wrong2" class="quiz-option sr-only">
+                            <label for="q2c" class="block w-full p-4 border-2 border-gray-300 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors">C) Para aumentar o tamanho do arquivo e parecer mais completo.</label>
+                        </div>
+                    </div>
+                    <button onclick="checkAnswer('q2', 'A) Para refletir descobertas recentes e evitar obsolescência conceitual.', 'Muito bem! A ciência e as tecnologias avançam rapidamente; um material sem atualização propaga informações defasadas.', 'Incorreto. A atualização não diz respeito apenas à estética ou volume, mas à validade do conteúdo.')" class="mt-6 bg-primary hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg transition-colors shadow-md focus:outline-none focus:ring-4 focus:ring-blue-300">
+                        Verificar Resposta
+                    </button>
+                    <div id="feedback-q2" class="mt-4 p-4 rounded-lg hidden font-medium"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="referencias" class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+            <h2 class="text-3xl font-extrabold text-primary mb-6 border-b-4 border-secondary inline-block pb-2">Referências Utilizadas</h2>
+            <ul class="list-disc list-inside space-y-3 text-gray-700">
+                <li>FILATRO, Andrea. <strong>Design Instrucional na Prática</strong>. São Paulo: Pearson, 2008.</li>
+                <li>MOORE, Michael G.; KEARSLEY, Greg. <strong>Educação a Distância: Uma visão integrada</strong>. São Paulo: Thomson Learning, 2007.</li>
+                <li>Material didático da disciplina "Docência Digital na Era da IA".</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8 text-center mt-12 border-t-4 border-secondary">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-lg font-semibold">Projeto - 1ª VA</p>
+            <p class="text-gray-400 mt-2">Criado por [Nome do Aluno] para avaliação na disciplina.</p>
+        </div>
+    </footer>
+
+    <script>
+        /**
+         * Function to check the selected radio button and display accessible feedback
+         * @param {string} questionName - The name attribute of the radio inputs
+         * @param {string} correctAnswerText - The label text of the correct answer
+         * @param {string} successMessage - Feedback for correct answer
+         * @param {string} errorMessage - Feedback for incorrect answer
+         */
+        function checkAnswer(questionName, correctAnswerText, successMessage, errorMessage) {
+            const options = document.getElementsByName(questionName);
+            let selectedValue = null;
+            let selectedLabel = null;
+
+            // Find selected radio
+            for (let option of options) {
+                if (option.checked) {
+                    selectedValue = option.value;
+                    // Find the associated label text for screen reader context if needed
+                    selectedLabel = document.querySelector(`label[for="${option.id}"]`).innerText;
+                    break;
+                }
+            }
+
+            const feedbackElement = document.getElementById(`feedback-${questionName}`);
+
+            // Clear previous styles
+            feedbackElement.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'border-l-4', 'border-green-600', 'bg-red-100', 'text-red-800', 'border-red-600', 'bg-yellow-100', 'text-yellow-800');
+
+            if (!selectedValue) {
+                // No option selected
+                feedbackElement.classList.add('bg-yellow-100', 'text-yellow-900', 'border-l-4', 'border-yellow-500');
+                feedbackElement.innerHTML = `<strong>Atenção:</strong> Por favor, selecione uma resposta antes de verificar.`;
+            } else if (selectedValue === 'correct') {
+                // Correct answer
+                feedbackElement.classList.add('bg-green-100', 'text-green-900', 'border-l-4', 'border-green-600');
+                feedbackElement.innerHTML = `<div class="flex"><svg class="w-6 h-6 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <div>${successMessage}</div></div>`;
+            } else {
+                // Incorrect answer
+                feedbackElement.classList.add('bg-red-100', 'text-red-900', 'border-l-4', 'border-red-600');
+                feedbackElement.innerHTML = `<div class="flex"><svg class="w-6 h-6 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg> <div>${errorMessage}</div></div>`;
+            }
+        }
+    </script>
+</body>
+</html>
